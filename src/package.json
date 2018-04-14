@@ -6,8 +6,8 @@
   "license": "ISC",
   "scripts": {
     "stylelint": "node_modules/sass-lint/bin/sass-lint.js -v app/Resources/public/scss/**/*.*",
-    "compilecss": "node-sass app/Resources/public/scss/main.scss web/assets/css/main.css",
-    "postcss": "node_modules/postcss-cli/bin/postcss --use autoprefixer -b 'last 2 versions' -r web/assets/css/main.css",
+    "compilecss": "node-sass app/Resources/public/scss/app.scss web/assets/css/app.css",
+    "postcss": "node_modules/postcss-cli/bin/postcss --use autoprefixer -b 'last 2 versions' -r web/assets/css/app.css",
     "buildjs": "node_modules/.bin/webpack",
     "buildcss": "npm run stylelint && npm run compilecss && npm run postcss",
     "watch": "watch 'npm run build' app/Resources/public/scss/. & watch 'npm run buildjs' app/Resources/public/js/.",

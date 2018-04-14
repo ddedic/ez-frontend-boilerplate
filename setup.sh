@@ -8,6 +8,8 @@ read installFrontend
 echo -n "Do you want do install StyleflashereZPlatformBaseBundle (y/n)? "
 read installBaseBundle
 
+# ADD LOCAL DOMAIN
+echo "127.0.0.1 $projectName" >> /etc/hosts
 
 # CREATE DB
 mysql -u homestead -psecret -h localhost  -e "CREATE DATABASE $projectName;"
@@ -45,4 +47,5 @@ if [ "$installFrontend" == "y" ] ;then
     npm install
 fi
 
-open "http://" $projectName ".local"
+echo "💪  We are done!"
+echo "Have fun at work 😉"

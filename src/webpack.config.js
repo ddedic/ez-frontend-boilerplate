@@ -11,7 +11,7 @@ module.exports =  function(env){
             path.resolve(__dirname, './app/Resources/public/js/app.js')
         ,
         output: {
-            filename: 'bundle.js',
+            filename: 'app.js',
             //library: 'TV',
             path: path.resolve(__dirname, './web/assets/js')
         },
