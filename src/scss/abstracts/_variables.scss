@@ -1,0 +1,34 @@
+$font-primary: 'DIN', sans-serif;
+$font-secondary: 'DIN-Bold', sans-serif;
+
+$fa-font-path: '/assets/fonts' !default;
+$lg-path-fonts: '/assets/fonts' !default;
+
+$color-primary: #96c11f;
+$color-secondary: #0c3451;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey: #d9d9d9;
+$color-grey-light: #ebebeb;
+$color-grey-dark: #757575;
+
+//BUTTON
+$btn-font: $font-primary;
+$btn-font-weight: 400;
+$btn-border: none;
+$btn-border-radius: 10px;
+$btn-padding: 10px 60px;
+
+$btn-xs-padding: 10px 10px;
+$btn-xs-font-size: 10px;
+$btn-lg-font-size: 15px;
+$btn-lg-padding: 15px 20px;
+
+$btn-primary-color: $color-white;
+$btn-primary-background: #3498db;
+$btn-secondary-color: $color-white;
+$btn-secondary-background: #8e44ad;
+$btn-grey-color: $color-white;
+$btn-grey-background: #7f8c8d;

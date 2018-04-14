@@ -1,0 +1,23 @@
+{
+  "extends": "eslint:recommended",
+  "root": true,
+  "rules": {
+    "indent": ["error", 4],
+    "no-console": "off",
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "commonjs": true,
+  }
+}
