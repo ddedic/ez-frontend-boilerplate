@@ -1,0 +1,15 @@
+ezpublish:
+    system:
+        site_group:
+            content_view:
+                full:
+                    frontpage:
+                        template: 'full/frontpage.html.twig'
+                        match:
+                            Identifier\ContentType:
+                                - frontpage
+                    page:
+                        template: 'full/textpage.html.twig'
+                        match:
+                            Identifier\ContentType:
+                                - page

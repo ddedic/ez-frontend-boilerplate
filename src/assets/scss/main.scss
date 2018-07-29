@@ -1,0 +1,17 @@
+@import '../../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../../node_modules/slick-carousel/slick/slick';
+@import '../../../../node_modules/lightgallery/src/sass/lightgallery';
+
+@import 'variables';
+
+@import 'base/base';
+
+@import 'components/btn';
+@import 'components/cover';
+@import 'components/navigation';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/frontpage';
+

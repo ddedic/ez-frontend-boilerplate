@@ -1,0 +1,94 @@
+-
+    type: language
+    mode: create
+    lang: ger-DE
+    name: Deutsch
+-
+    type: language
+    mode: delete
+    lang: eng-GB
+-
+    type: content_type
+    mode: create
+    name: Frontpage
+    name_pattern: <menu_name>
+    content_type_group: 1
+    identifier: frontpage
+    lang: ger-DE
+    is_container: true
+    attributes:
+        -
+            identifier: menu_name
+            type: ezstring
+            name: Menü Name
+            required: true
+        -
+            identifier: headline
+            type: ezstring
+            name: Überschrift
+            required: true
+-
+    type: content_type
+    mode: create
+    name: Inhaltseite
+    name_pattern: <menu_name>
+    content_type_group: 1
+    identifier: page
+    lang: ger-DE
+    is_container: true
+    attributes:
+        -
+            identifier: menu_name
+            type: ezstring
+            name: Menü Name
+            required: true
+        -
+            identifier: headline
+            type: ezstring
+            name: Überschrift
+            required: true
+        -
+            identifier: redirect_to
+            type: ezobjectrelation
+            name: Weiterleiten nach
+        -
+            identifier: redirect_to_child
+            type: ezboolean
+            name: Weiterleiten zum ersten Kind
+-
+    type: content_type
+    mode: create
+    name: Unterseite
+    name_pattern: <menu_name>
+    content_type_group: 1
+    identifier: subpage
+    is_container: true
+    lang: ger-DE
+    attributes:
+        -
+            identifier: menu_name
+            type: ezstring
+            name: Menü Name
+            required: true
+        -
+            identifier: sujet_heading
+            type: ezstring
+            name: Überschrift
+            required: true
+-
+    type: content
+    mode: create
+    content_type: frontpage
+    parent_location: 2
+    main_location: 54
+    attributes:
+        menu_name:  Startseite
+        headline:  Hello World
+-
+    type: content
+    mode: create
+    content_type: page
+    parent_location: 54
+    attributes:
+        menu_name:  Inhalt
+        headline:  Hello World
