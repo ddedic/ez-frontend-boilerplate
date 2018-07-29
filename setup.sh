@@ -1,7 +1,4 @@
 #!/bin/bash
-
-rm -rf ../dominik
-
 mysql_user="mysql"
 mysql_password="mysql"
 mysql_host="mysql"
